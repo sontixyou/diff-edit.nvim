@@ -99,7 +99,7 @@ function M.apply_right_to_left(state)
     start_b = hunk.start_a,
     count_b = hunk.count_a,
   }
-  
+
   if M.apply_hunk(reversed_hunk, state.buf_b, state.buf_a) then
     vim.notify("Applied hunk from right to left", vim.log.levels.INFO)
   end
